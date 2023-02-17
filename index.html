@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Napredni css selektori</title>
+</head>
+<style>
+a[href*=google] {
+    color: green;
+}
+a[href*=link] {
+    color: red;
+}
+.p5c:nth-child(even) {
+    color: red;
+}
+.p5c:nth-child(odd) {
+    color: blue;
+}
+p.content::after {
+    content: " - NEW";
+    color: yellow;
+}
+
+.p5c:last-child:hover{
+    font-style: italic;
+}
+
+
+
+
+</style>
+<body>
+    <h1>Main heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p class="content">Paragraph 2</p>
+        <p class="content">Paragraph 3</p>
+    
+    </div>
+    <div class="p5">
+        <h3>Sub Subheading</h3>
+        <p class="p5c">Paragraph 4</p>
+        <p class="p5c">Paragraph 5</p>
+        <p class="p5c">Paragraph 6</p>
+        <p class="p5c">Paragraph 7</p>
+        <p class="p5c">Paragraph 8</p>
+        <p class="p5c">Paragraph 9</p>
+        <p class="p5c">Paragraph 10</p>
+    </div>
+</body>
+</html>
